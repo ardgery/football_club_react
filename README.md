@@ -1,10 +1,7 @@
 # Football Club React ( Next.js ) by Gery
 
 ## Live Website :
-
-
-#### Server Repository : 
-
+https://football-club-react.vercel.app/
 
 ### My App Stacks :
 ```sh
@@ -15,7 +12,7 @@
 - Responsive and Accessible (mobile-tablet-desktop)
 - Webpack
 - Styling with SASS
-- Server deployed with Vercel
+- Application hosted with Vercel
 ```
 
 ### How to Locally Run the Application :
