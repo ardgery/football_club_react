@@ -1,0 +1,19 @@
+@import './variables';
+@import './mixins';
+@import './loading';
+
+@include fontFace;
+
+p{
+    margin:0;
+}
+
+body{
+    margin:0;
+    font-family: "Lato-Medium";
+}
+
+h1{
+    text-align: center;
+    margin-top: 75px;
+}

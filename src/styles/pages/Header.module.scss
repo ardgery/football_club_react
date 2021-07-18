@@ -1,0 +1,18 @@
+@import '../variables';
+@import '../mixins.scss';
+
+.headerWrap{
+    width:100%;
+    background:#fff;
+    position: fixed;;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:15px 0 15px 50px;
+    box-shadow: 0 4px 2px -2px #c8d6e5;
+    
+    p{
+        color:$darkBlue;
+        font-size:23px;
+    }
+}
