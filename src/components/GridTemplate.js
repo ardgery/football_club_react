@@ -1,5 +1,6 @@
 import styles from 'styles/pages/Grid.module.scss';
 import Link from 'next/link'
+import BackButton from './BackButton';
 
 export default function GridTemplate({ title, data }) {
     function contentRender(name, crest) {
@@ -14,9 +15,11 @@ export default function GridTemplate({ title, data }) {
             );
         }
     }
+
     const linkto = title === 'Leagues' ? 'teams' : 'teamprofile';
     return (
-        <>
+        <div className={styles.wrapper}>
+            {title === 'Teams' && (<BackButton title="Leagues" />)}
             <h1>{title}</h1>
             <div className={styles.gridTemplate}>
                 {
@@ -27,6 +30,6 @@ export default function GridTemplate({ title, data }) {
                     ))
                 }
             </div>
-        </>
+        </div>
     )
 }

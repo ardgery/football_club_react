@@ -3,4 +3,12 @@
 
 .contentWrap{
     padding:30px;
+
+    @media (max-width:$breakTablet)  {
+        padding:30px;
+    }
+
+    @media (max-width:$breakPhoneLandscape)  {
+        padding:0;
+    }
 }

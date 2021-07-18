@@ -1,9 +1,13 @@
 // color
 $mainRed: #EB3349;
-$mainBlue: #341f97;
 $mainGreen: #20bf6b;
 $darkBlue: #4b6584;
 $mainBlack:#222f3e;
 
 // size
 $verySmall: 12px;
+
+/*==== MEDIA QUERIES BREAK ====*/
+$breakPhoneLandscape: 576px;
+$breakTablet: 801px;
+$breakMainWrapper: 1208px;

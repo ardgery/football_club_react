@@ -1,11 +1,20 @@
+@import '../variables';
 .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 10px auto 0 auto;
     width: 100%;
 
+    @media (max-width:$breakTablet)  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width:$breakPhoneLandscape)  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .teamFieldWrap{
-        width:80%;
+        width:90%;
         min-height:300px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         margin:25px auto 0 auto;
@@ -29,7 +38,7 @@
     }
 
     .squadWrap{ 
-        width:80%;
+        width:90%;
         min-height:300px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         margin:25px auto 0 auto;
@@ -65,6 +74,11 @@
                     transition:all 0.25s ease-in-out;
                     cursor:pointer;
                 }
+            }
+
+            .sorrySquad{
+                color:#222f3e;
+                line-height: 23px;
             }
         }
         .playerNote{

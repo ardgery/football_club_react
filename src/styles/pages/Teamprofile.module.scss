@@ -1,7 +1,23 @@
+@import '../variables';
+
 .wrapper{
+    position:relative;
     padding-bottom:100px;
-    img{
-        display:block;
-        margin:0 auto;
+
+    @media (max-width:$breakTablet){
+    }
+
+    @media (max-width:$breakPhoneLandscape){
+        padding-bottom:150px;
+    }
+
+    .teamDetail{
+        margin-top: 52px;
+        position: relative;
+        top: 48px;
+        img{
+            display:block;
+            margin:0 auto;
+        }
     }
 }

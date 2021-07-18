@@ -3,8 +3,6 @@ import useSWR from 'swr'
 import axios from 'axios'
 import TeamProfile from 'components/TeamProfile';
 
-
-
 const TeamProf = () => {
     const router = useRouter();
     let token = "ac85731748e04303bc9842c0f6cea8fb";
@@ -17,15 +15,10 @@ const TeamProf = () => {
             })
         ;
 
-    const { data, error } = useSWR(
+    const { data } = useSWR(
         [`http://api.football-data.org/v2/teams/${id}`, token], //get competitions based on area
         fetcher
     );
-
-    if (error) console.log("An error has occurred.")
-    if (!data) console.log("Loading....")
-    if (data) console.log("Dataaaaaaaaa = ", data)
-
 
     return (
         <>

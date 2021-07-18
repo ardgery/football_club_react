@@ -1,4 +1,4 @@
-import LeaguesContextProvider from 'contexts/FetcherContext';
+import LeaguesContextProvider from 'contexts/LeaguesContext';
 import Layout from 'components/Layout';
 import 'styles/global.scss';
 

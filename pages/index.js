@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LeaguesContext } from 'contexts/FetcherContext';
+import { LeaguesContext } from 'contexts/LeaguesContext';
 import GridTemplate from 'components/GridTemplate';
 
 export default function Home() {

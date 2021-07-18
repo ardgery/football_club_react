@@ -1,16 +1,14 @@
 import styles from 'styles/pages/Teamprofile.module.scss';
-import { useEffect } from 'react';
 import TeamDetail from './TeamDetail';
+import BackButton from './BackButton';
 
 export default function TeamProfile({ data }) {
-    useEffect(() => {
-        console.log("DATABAYOOO = ", data)
-    }, [])
     return (
         <div className={styles.wrapper}>
-            <div>
-                <h1>{data.name}</h1>
-                <img src={data.crestUrl} alt="" width="150px" />
+            <BackButton title="Teams" />
+            <div className={styles.teamDetail}>
+                <h1 className={styles.headerTeam}>{data.name}</h1>
+                <img src={data.crestUrl} alt="" width="120px" />
                 <TeamDetail data={data} />
             </div>
         </div>

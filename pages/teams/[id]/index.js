@@ -15,15 +15,10 @@ const Teams = () => {
             })
         ;
 
-    const { data, error } = useSWR(
-        [`http://api.football-data.org/v2/competitions/${id}/teams`, token], //get competitions based on area
+    const { data } = useSWR(
+        [`http://api.football-data.org/v2/competitions/${id}/teams`, token],
         fetcher
     );
-
-    if (error) console.log("An error has occurred.")
-    if (!data) console.log("Loading....")
-    if (data) console.log("Dataaaaaaaaa = ", data)
-
 
     return (
         <>
