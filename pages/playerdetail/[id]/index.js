@@ -16,7 +16,7 @@ const Players = () => {
         ;
 
     const { data } = useSWR(
-        [`http://api.football-data.org/v2/players/${id}`, token],
+        [`https://api.football-data.org/v2/players/${id}`, token],
         fetcher
     );
 

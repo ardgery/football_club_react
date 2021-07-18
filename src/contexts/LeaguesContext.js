@@ -13,7 +13,7 @@ export default function LeaguesContextProvider(props) {
         for (var i = 0; i < leaguesNames.length; i++) {
             try {
                 promises.push(
-                    await axios.get(`http://api.football-data.org/v2/competitions/${leaguesNames[i]}`, {
+                    await axios.get(`https://api.football-data.org/v2/competitions/${leaguesNames[i]}`, {
                         headers: {
                             'X-Auth-Token': token,
                             'Content-Type': 'application/json'

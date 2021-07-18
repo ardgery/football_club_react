@@ -16,7 +16,7 @@ const TeamProf = () => {
         ;
 
     const { data } = useSWR(
-        [`http://api.football-data.org/v2/teams/${id}`, token], //get competitions based on area
+        [`https://api.football-data.org/v2/teams/${id}`, token], //get competitions based on area
         fetcher
     );
 
