@@ -42,7 +42,7 @@ export default function TeamDetail({ data }) {
                                 <Link href={`/playerdetail/[id]`} as={`/playerdetail/${v.id}`} key={v.id}>{v.name}</Link>
                             ) : null)
                             :
-                            <p className={styles.sorrySquad}>Sorry, currently we cannot display this team's squad. Maybe try to choose another team? :)</p>
+                            <p className={styles.sorrySquad}>Sorry, currently we cannot display this team&apos;s squad. Maybe try to choose another team? :)</p>
                     }
                 </div>
                 <p className={styles.playerNote}>Note: Click on player name to see the player detail</p>
