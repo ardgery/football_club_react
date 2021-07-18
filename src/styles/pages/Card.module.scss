@@ -1,23 +1,76 @@
 .wrapper{
-    width: 900px;
-    min-height:300px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin:25px auto 0 auto;
-    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto 0 auto;
+    width: 100%;
 
-    h2{
-        font-size:27px;
-        margin-top:0;
-        text-align:center;
+    .teamFieldWrap{
+        width:80%;
+        min-height:300px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin:25px auto 0 auto;
+        padding:20px;
+
+        h2{
+            font-size:27px;
+            margin-top:0;
+            text-align:center;
+        }
+    
+        .teamField{
+            margin-bottom:20px;
+            line-height:23px;
+    
+            .fieldTitle{
+                color: #20bf6b;
+                font-weight:bold;
+            }
+        }
     }
 
-    .teamField{
-        margin-bottom:20px;
-        line-height:23px;
+    .squadWrap{ 
+        width:80%;
+        min-height:300px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin:25px auto 0 auto;
+        padding:20px;
 
-        .fieldTitle{
+        h2{
+            font-size:27px;
+            margin-top:0;
+            text-align:center;
+        }
+
+        p{
             color: #20bf6b;
             font-weight:bold;
+            margin-bottom:10px;
+        }
+        .squadInside{
+            height:400px;
+            min-height: 400px;
+            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 40px;
+
+            a{
+                font-size: 15px;
+                padding-left:15px;
+                text-decoration: none;
+                color:#222f3e;
+                &:hover{
+                    background:#222f3e;
+                    color:#fff;
+                    transition:all 0.25s ease-in-out;
+                    cursor:pointer;
+                }
+            }
+        }
+        .playerNote{
+            color:#ee5253;
+            margin-top:20px;
+            text-align: center;
         }
     }
 }

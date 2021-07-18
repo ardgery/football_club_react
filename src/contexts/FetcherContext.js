@@ -1,8 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
-export const FetcherContext = createContext();
-export default function FetcherContextProvider(props) {
+export const LeaguesContext = createContext();
+export default function LeaguesContextProvider(props) {
     const [competitions, setCompetitions] = useState();
 
     async function getCompetitions() {
@@ -43,50 +43,9 @@ export default function FetcherContextProvider(props) {
         }
     }, [])
 
-
-
-
-    // let leaguesNames = ['WC', 'CL', 'BL1', 'DED', 'BSA', 'PD', 'FL1', 'ELC', 'PPL', 'EC', 'SA', 'PL', 'CLI'];
-    // let leaguesUrl = [];
-    // for (var i = 0; i < leaguesNames.length; i++) {
-    //     leaguesUrl.push(
-    //         `http://api.football-data.org/v2/competitions/${leaguesNames[i]}`
-    //     )
-    // }
-
-    // const { data, error } = useSWR(
-    //     [leaguesUrl, datas.token], //get all areas
-    //     // [`http://api.football-data.org/v2/${datas.url}`, datas.token], //get all areas
-    //     //[`http://api.football-data.org/v2/competitions?areas=2088`, token], //get competitions based on area
-    //     // [`http://api.football-data.org/v2/competitions/2002/teams`, token], //get teams based on competitions
-    //     // [`http://api.football-data.org/v2/teams/5`, token], // get list players of teams
-    //     // [`http://api.football-data.org/v2/players/44`, token], // get detail of player
-    //     fetcher
-    // );
-
-
-    // useEffect(() => {
-    //     console.log("section = ", datas.section)
-    //     switch (datas.section) {
-    //         case 'areas':
-    //             setDatas({ ...datas, url: 'competitions/CL/teams' })
-    //             break;
-    //         case 'competitions':
-    //             setDatas({ ...datas, url: 'competitions?areas=2088' })
-    //             break;
-    //         case 'teams':
-    //             setDatas({ ...datas, url: 'competitions/2002/teams' })
-    //             break;
-    //         default:
-    //             setDatas({ ...datas, url: 'teams' })
-    //     }
-
-
-    // }, [datas.section])
-
     return (
-        <FetcherContext.Provider value={{ competitions }}>
+        <LeaguesContext.Provider value={{ competitions }}>
             {props.children}
-        </FetcherContext.Provider>
+        </LeaguesContext.Provider>
     );
 }

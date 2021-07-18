@@ -1,0 +1,17 @@
+.wrapper{
+    min-height:300px;
+    width:400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin:80px auto 0 auto;
+    padding:20px;
+
+    .playerField{
+        margin-bottom:20px;
+        line-height:23px;
+
+        .fieldTitle{
+            color: #20bf6b;
+            font-weight:bold;
+        }
+    }
+}

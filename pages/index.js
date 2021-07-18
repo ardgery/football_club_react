@@ -1,18 +1,9 @@
-import { useEffect, useContext } from 'react';
-import { FetcherContext } from 'contexts/FetcherContext';
+import { useContext } from 'react';
+import { LeaguesContext } from 'contexts/FetcherContext';
 import GridTemplate from 'components/GridTemplate';
 
-
-
-export default function Home(props) {
-  const { competitions } = useContext(FetcherContext);
-  useEffect(() => {
-    if (competitions) {
-      console.log("competitions = ", competitions)
-    } else {
-      console.log("loadinggg")
-    }
-  }, [competitions])
+export default function Home() {
+  const { competitions } = useContext(LeaguesContext);
   return (
     <>
       {
