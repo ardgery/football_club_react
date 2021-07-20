@@ -2,6 +2,7 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap:20px;
     margin: 10px auto 0 auto;
     width: 100%;
 
@@ -14,11 +15,11 @@
     }
 
     .teamFieldWrap{
-        width:90%;
+        width:100%;
         min-height:300px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        margin:25px auto 0 auto;
         padding:20px;
+        box-sizing: border-box;
 
         h2{
             font-size:27px;
@@ -38,11 +39,11 @@
     }
 
     .squadWrap{ 
-        width:90%;
+        width:100%;
         min-height:300px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        margin:25px auto 0 auto;
         padding:20px;
+        box-sizing: border-box;
 
         h2{
             font-size:27px;
