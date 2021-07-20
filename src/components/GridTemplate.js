@@ -16,6 +16,7 @@ export default function GridTemplate({ title, data }) {
         }
     }
 
+
     const linkto = title === 'Leagues' ? 'teams' : 'teamprofile';
     return (
         <div className={styles.wrapper}>

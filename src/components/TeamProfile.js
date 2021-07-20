@@ -3,6 +3,7 @@ import TeamDetail from './TeamDetail';
 import BackButton from './BackButton';
 
 export default function TeamProfile({ data }) {
+
     return (
         <div className={styles.wrapper}>
             <BackButton title="Teams" />
